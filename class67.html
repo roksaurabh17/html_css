@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>nav</title>
+         <style>
+             *{
+                 margin: 0;
+             }
+             
+             .navbar{
+                 overflow: hidden;
+                 background-color: black;
+                 font-family: sans-serif;
+             }
+             .navbar>a{
+                 float: left;
+                 font-size: 18px;
+                 color: wheat;
+                 text-align: center;
+                 padding: 14px 16px;
+                 text-decoration: none;
+             }
+             .dropdown{
+                 float: left;
+                 overflow: hidden;
+             }
+             .dropdown>.dropbtn{
+                 font-size: 18px;
+                 border: none;
+                 outline: none;
+                 color: white;
+                 padding: 14px 16px;
+                 background-color: inherit;
+                 font-family: inherit;
+             }
+             .navbar>a:hover,.dropdown:hover .dropbtn{
+                 background-color: red;
+             }
+             .dropdown-content{
+                 min-width: 150px;
+                 box-shadow: 0px 0px 16px black;
+                 position: absolute;
+                 display: none;
+                 text-decoration: none;
+                 text-align: left;
+             }
+             .dropdown-content>a{
+                 float: none;
+                 color: black;
+                 padding: 12px 16px;
+                 display: block;
+                 text-align: left;
+             }
+             .dropdown-content>a:hover{
+                 background-color: white;
+             }
+             .dropdown:hover .dropdown-content{
+                 display: block;
+             }
+
+
+         </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="">Home</a>
+            <a href="">News</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="" >Link1</a>
+                    <a href="" class="link">Link2</a>
+                    <a href="" class="link">Link3</a>
+                    <a href="" class="link">Link4</a>
+                    <a href="" class="link">Link5</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

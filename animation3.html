@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: play;
+            animation-duration: 6.01s;
+            animation-iteration-count: infinite;
+            text-align: center;
+        }
+
+
+        @keyframes play {
+            0% {
+                background-color: red;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: blue;
+                top: 500px;
+                left: 0;
+            }
+
+            50% {
+                background-color: chartreuse;
+                top: 500px;
+                left: 500px;
+            }
+
+            75% {
+                background-color: cyan;
+                left: 500px;
+                top: 0;
+            }
+
+            100% {
+                background-color: violet;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: play1;
+            animation-duration: 6.01s;
+            animation-iteration-count: infinite;
+            text-align: center;
+
+
+
+        }
+
+        .h {
+            margin-top: 35px;
+        }
+
+        .ht {
+            margin-top: 35px;
+        }
+
+        @keyframes play1 {
+            100% {
+                background-color: red;
+                top: 0;
+                left: 0;
+            }
+
+            75% {
+                background-color: blue;
+                top: 500px;
+                left: 0;
+            }
+
+            50% {
+                background-color: chartreuse;
+                top: 500px;
+                left: 500px;
+            }
+
+            25% {
+                background-color: cyan;
+                left: 500px;
+                top: 0;
+            }
+
+            0% {
+                background-color: violet;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <H2 class="h"> CSS</H2>
+    </div>
+    <div class="box1">
+        <h2 class="ht">HTML</h2>
+    </div>
+</body>
+
+</html>
